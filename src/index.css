@@ -1,0 +1,110 @@
+:root {
+	font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	font-weight: 400;
+
+	color-scheme: light dark;
+	color: rgba(255, 255, 255, 0.87);
+	background-color: #242424;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	margin: 0;
+	display: flex;
+	min-width: 320px;
+	min-height: 100vh;
+}
+
+h1 {
+	font-size: 3.2em;
+	line-height: 1.1;
+}
+
+input {
+	width: 100%;
+	max-width: 600px;
+	font-size: 1rem;
+	padding: 1rem;
+	border-radius: 0.5rem;
+	border: none;
+	background-color: #333;
+	color: #fff;
+	box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
+	transition: all 0.2s ease-in-out;
+}
+
+input:focus {
+	outline: none;
+	box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2);
+}
+
+input::placeholder {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.post {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	max-width: 600px;
+	padding: 0.5rem 1rem;
+	margin: 1rem auto;
+	background-color: #333;
+	border-radius: 0.5rem;
+	box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.post p {
+	margin: 0;
+	padding: 0.5rem 0;
+	color: #858585;
+}
+
+.post small {
+	color: #757575;
+}
+
+.loader {
+	position: relative;
+	display: flex;
+	place-self: center;
+	margin: 1rem;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 50%;
+	background-color: #fff;
+	animation: loader 0.6s linear infinite;
+}
+
+.error {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	max-width: 600px;
+	padding: 0.5rem 1rem;
+	margin: 1rem auto;
+	background-color: #333;
+	border-radius: 0.5rem;
+	box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
+	color: #ff0000;
+}
+
+@keyframes loader {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(0.5);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
